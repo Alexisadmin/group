@@ -1,0 +1,30 @@
+header{
+
+    text-align: center;
+    background: black;
+    padding: 6px;
+}
+
+header h1{color: white;
+font-size: 60px; font-weight:20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background: rgb(116, 112, 112);
+    overflow: hidden;
+    padding: 13px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 16px;
+}
+
+nav a:hover{
+    color: white;
+    background: green;
+    padding: 12px;
+   
+}
+
