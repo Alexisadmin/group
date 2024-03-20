@@ -3,112 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signup/Login Page</title>
+<title>Landing Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  /* Custom CSS */
+  .hero-section {
+    background-image: url('https://via.placeholder.com/1500x600');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .features-section {
     background-color: #f4f4f4;
-  }
-
-  .container {
-    max-width: 400px;
-    margin: 80px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-  .separator {
-    text-align: center;
-    margin: 20px 0;
-    position: relative;
-  }
-
-  .separator::before,
-  .separator::after {
-    content: "";
-    display: inline-block;
-    width: 45%;
-    height: 1px;
-    background-color: #ccc;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .separator::before {
-    right: 5px;
-  }
-
-  .separator::after {
-    left: 5px;
-  }
-
-  .text-center {
+    padding: 50px 0;
     text-align: center;
   }
 
-  .login-link {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  .login-link:hover {
-    text-decoration: underline;
+  .cta-section {
+    background-color: #007bff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <h2>Signup</h2>
-  <form action="#">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="password" placeholder="Password" required>
-    <input type="submit" value="Signup">
-  </form>
-  <div class="separator">or</div>
-  <h2>Login</h2>
-  <form action="#">
-    <input type="text" placeholder="Username" required>
-    <input type="password" placeholder="Password" required>
-    <input type="submit" value="Login">
-  </form>
-  <div class="text-center">
-    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <h1>Welcome to Your Website</h1>
+    <p>This is a brief description of what your website offers. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Feature 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium lorem non felis vestibulum, id tempor nisl varius.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Feature 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium lorem non felis vestibulum, id tempor nisl varius.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Feature 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium lorem non felis vestibulum, id tempor nisl varius.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to get started?</h2>
+    <p>Sign up now and start using our amazing platform today!</p>
+    <a href="#" class="btn btn-light btn-lg">Sign Up</a>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
